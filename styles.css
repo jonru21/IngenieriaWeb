@@ -1,0 +1,149 @@
+body{
+    background-color: antiquewhite;
+    padding: 20px;
+    color: cornflowerblue;
+}
+.cabecera{
+    background-color: darkblue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.tituloPagina{
+    background-color: darkblue;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cambioPestanias{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.cambioPestanias li{
+    display: inline;
+    margin-right: 15px;
+}
+.cambioPestanias a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 18px;
+}
+.fotoBorda{
+    float: left;
+    margin-right: 15px;
+    width: 375px;
+    height: auto;
+}
+
+.textoInicial{
+    text-align: right;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    color: white;
+    background-color: darkblue;
+    
+}
+.ubicacionBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.botonEnviar{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tabla{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.tabla th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.informacion{
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.actividades{
+    text-align: left;
+}
+
+.actividades h4{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .tituloPagina {
+        font-size: 2rem; 
+    }
+
+    .cambioPestanias a {
+        font-size: 1rem; 
+    }
+
+    .fotoBorda {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .textoInicial {
+        font-size: 1.2rem; 
+    }
+
+    .tabla {
+        width: 100%; 
+    }
+
+    .tabla th, .tabla td {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .tituloPagina {
+        font-size: 1.5rem; 
+    }
+
+    .cambioPestanias a {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    .ubicacionBoton {
+        flex-direction: column; 
+    }
+}

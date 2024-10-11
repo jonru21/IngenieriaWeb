@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Titulo y pie de página -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Izena eman</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="cabecera">
+            <h1 class="tituloPagina">Campamentos en Izaba / Izabako udalekuak</h1>
+            <nav>
+                <ul class="cambioPestanias">
+                    <li><a href="index.html">Página principal / Orrialde nagusia</a></li>
+                    <li><a href="formulario.html">Inscribete / Izena eman</a></li>
+                    <li><a href="cuotaPrecios.html">Consulta precios / Prezioak kontsultatu</a></li>
+                    <li><a href="extra.html">Actividades / Aktibitateak</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Formulario -->
+        <main>
+            <form action="server.php" method="post">
+                <h1>Inscripción al campamento / Udalekura joateko izen ematea</h1>
+                <hr>
+                <h4>Rellena el siguiente formulario para apuntar a tu hijo/a / Bete ezazu formulario hau zure seme-alabari apuntatzeko</h4>
+                <fieldset>
+                    <legend>Datos del usuario / Erabiltzailearen izena:</legend>
+                    <label for="Queturno">Que turno / Zein txanda<span style="color: cornflowerblue;">*</span></label>
+                    <select id="Queturno" name="Que turno">
+                        <option value="Primer turno">Primer turno</option>
+                        <option value="Segundo turno">Segundo turno</option>
+                        <option value="Tercer turno">Tercer turno</option>
+                        <option value="Cuarto turno">Cuarto turno</option>
+                    </select><br>
+                    Nombre / Izena: <span style="color: cornflowerblue;">*</span><input type="text" name="nombre"><br>
+                    ¿El niño/a ha estado en el campamento antes? / Semea udalekuan gehiagotan egon da?<span style="color: cornflowerblue;">*</span><br>
+                    <input type="radio" name="repetidor" value="Si / Bai" checked> Si / Bai
+                    <input type="radio" name="repetidor" value="No / Ez"> No / Ez <br>
+                    Nombre del niño/a / Seme/Alabaren izen-abizena:<span style="color: cornflowerblue;">*</span> <input type="text" name="nombreninio"><br>
+                    DNI / NAN:<span style="color: cornflowerblue;">*</span> <input type="text" name="dni"><br>
+                    Alergias / Alergiarik:<span style="color: cornflowerblue;">*</span> <br>
+                    <input type="radio" name="alergias" value="Si / Bai" checked> Si / Bai
+                    <input type="radio" name="alergias" value="No / Ez"> No / Ez <br>                
+                    Cuáles: <input type="text" name="quealergias"><br>
+                    Necesita tomar algún medicamento? / Medikamenduren bat hartu behar du?<span style="color: cornflowerblue;">*</span><br>
+                    <input type="radio" name="medicamento" value="Si / Bai" checked> Si / Bai
+                    <input type="radio" name="medicamento" value="No / Ez"> No / Ez <br> 
+                    Cuáles: <input type="text" name="quemedicamentos"><br>
+                    Nombre de persona de contacto / Kontaktuko pertsonaren izena: <span style="color: cornflowerblue;">*</span><input type="text" name="nombrecontacto"><br>
+                    Número de telefono de la persona de contacto / Kontaktuko pertsonaren zenbakia: <span style="color: cornflowerblue;">*</span><input type="text" name="telefonocontacto"><br>
+                    Información extra que podamos necesitar:<br>
+                    <textarea name="textarea" rows="10"
+                    cols="50"></textarea>
+                </fieldset>
+                <span style="color: cornflowerblue;">*</span> Obligatorio rellenar
+                <div class="ubicacionBoton"> 
+                <input type="submit" name="enviar" value = "ENVIAR" class="botonEnviar">
+                </div>
+            </form>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <p>&copy;Izabako udalekuak, eskubide guztiak erreserbatutra geratzen dira</p>
+        </footer>
+    </body>
+</html>
